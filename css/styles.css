@@ -3596,7 +3596,7 @@ img.u-pull-left {
  * ------------------------------------------------------------------- */
 
 .s-skills {
-  padding-top: var(--vspace-3);
+  padding-top: var(--vspace-1);
   padding-bottom: var(--vspace-2_5);
 }
 
@@ -3611,7 +3611,7 @@ img.u-pull-left {
  * ------------------------------------------------------------------- */
 
 .s-works {
-  padding-top: var(--vspace-5);
+  padding-top: var(--vspace-4);
   padding-bottom: var(--vspace-3_5);
 }
 

@@ -26,6 +26,12 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
 
+    <!-- stats
+    ================================================== -->
+    <script type="module">
+        import { Octokit } from "https://cdn.skypack.dev/@octokit/core";
+    </script>
+
 </head>
 
 <body id="top">
@@ -304,9 +310,13 @@
                     
                         <h3 data-animate-el>Stats Tabs</h3>
                     
+                        <script>
+                            loadStats();
+                        </script>
+
                         <ul class="stats-tabs" data-animate-el>
                             <li><a href="#works">1,234 <em>Projects</em></a></li>
-                            <li><a href="#0">567 <em>James</em></a></li>
+                            <li><a href="#0"><p id="code_frequency_p"></p> <em>Code Frequency</em></a></li>
                             <li><a href="#0">23,456 <em>John</em></a></li>
                             <li><a href="#0">3,456 <em>Andrew</em></a></li>
                             <li><a href="#0">456 <em>Philip</em></a></li>
@@ -568,6 +578,7 @@
     ================================================== -->
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/stats.js"></script>
 
 </body>
 
