@@ -1,15 +1,31 @@
-const owner_name = 'LukasSchikirianski';
-const repo_all = 'all';
 
-function loadStats() {
-    let code_frequency = await octokit.request('GET /repos/{owner}/{repo}/stats/code_frequency', {
-    owner: owner_name,
-    repo: repo_all
-    });
-    document.getElementById("code_frequency_p").innerHTML = 1234;
-
-    let commit_activity = await octokit.request('GET /repos/{owner}/{repo}/stats/commit_activity', {
-    owner: owner_name,
-    repo: repo_all
-    });
-}
+/*import React, { useEffect, useState } from "react";
+ 
+const GithubStatistics = () => {
+  const [githubStats, setGithubStats] = useState({
+    stargazers_count: "-",
+    forks_count: "-",
+  });
+ 
+  useEffect(() => {
+    fetch(`https://api.github.com/users/LukasSchikirianski/repos`)
+      .then((response) => response.json())
+      .then((json) => {
+        setGithubStats({
+          stargazers_count: json.stargazers_count,
+          forks_count: json.forks_count,
+        });
+      })
+      .catch((e) => console.log(`Error while calling GitHub API: ${e}`));
+  }, []);
+   
+  return (
+    <div>
+      <p>{githubStats.stargazers_count}</p>
+      <p>{githubStats.forks_count}</p>
+    </div>
+  );
+};
+ 
+export default GithubStatistics;
+*/
