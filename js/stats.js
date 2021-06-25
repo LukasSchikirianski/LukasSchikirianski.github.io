@@ -1,31 +1,34 @@
+/*
+var url = 'https://api.github.com/users/LukasSchikirianski/repos';
 
-/*import React, { useEffect, useState } from "react";
- 
-const GithubStatistics = () => {
-  const [githubStats, setGithubStats] = useState({
-    stargazers_count: "-",
-    forks_count: "-",
-  });
- 
-  useEffect(() => {
-    fetch(`https://api.github.com/users/LukasSchikirianski/repos`)
-      .then((response) => response.json())
-      .then((json) => {
-        setGithubStats({
-          stargazers_count: json.stargazers_count,
-          forks_count: json.forks_count,
-        });
-      })
-      .catch((e) => console.log(`Error while calling GitHub API: ${e}`));
-  }, []);
-   
-  return (
-    <div>
-      <p>{githubStats.stargazers_count}</p>
-      <p>{githubStats.forks_count}</p>
-    </div>
-  );
+var request = new XMLHttpRequest();
+request.open('GET', url);
+
+request.onload = function () {
+  // Request finished. Do processing here.
+  console.log(request.response());
 };
- 
-export default GithubStatistics;
+
+request.send(null);
 */
+
+window.onload = function () {
+  document.getElementById("projects").innerHTML = '1234' + ' <em>Projects</em>';
+  document.getElementById("code_frequency").innerHTML = '567' + ' <em>Code Frequency</em>';
+  document.getElementById("all_time_commits").innerHTML = '8901' + ' <em>All Time Commits</em>';
+  document.getElementById("placeholder_1").innerHTML = '12' + ' <em>Placeholder 1</em>';
+  document.getElementById("placeholder_2").innerHTML = '34' + ' <em>Placeholder 2</em>';
+  document.getElementById("placeholder_3").innerHTML = '56' + ' <em>Placeholder 3</em>';
+
+  function getRequest() {
+
+  var request = new XMLHttpRequest();
+
+  request.onload = function () {
+    document.getElementById("code_frequency").innerHTML = 'IT WORKS' + ' <em>Code Frequency</em>';
+  };
+
+  request.open("GET", "https://api.github.com/users/LukasSchikirianski/repos", true);
+  request.send();
+  }
+}
