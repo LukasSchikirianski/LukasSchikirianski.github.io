@@ -4263,3 +4263,25 @@ img.u-pull-left {
     right: 6vw;
   }
 }
+
+/* ------------------------------------------------------------------- 
+ * 404 Page
+ * ------------------------------------------------------------------- */
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.giant-title {
+  margin: 0;
+  padding: 0;
+  font-size: 8em;
+}
+
+.return-btn {
+  padding: 5em 0 0 0;
+}
