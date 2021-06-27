@@ -4267,37 +4267,49 @@ img.u-pull-left {
 /* ------------------------------------------------------------------- 
  * 404 Page
  * ------------------------------------------------------------------- */
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
 
 .centered {
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.return-btn {
+  position: absolute;
+  padding: 25vh 0 0;
 }
 
 .nfp-title {
   display: grid;
 }
 
-.giant-title {
+.pnf-title {
   line-height: 110%;
   padding: 0;
   margin: 0;
-  font-size: 8em;
 }
 
-.return-btn {
-  padding: 5vh 0 0 0;
+.s-pagewrap-nfp {
+  display: grid;
 }
 
 translucent {
   position: absolute;
-  top: 42.5%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 50vw;
-  opacity: 1%;
+  font-size: 35vw;
+  opacity: 0.005;
   color: #ffffff;
 }
 
@@ -4307,7 +4319,31 @@ translucent {
 .s-footer-nfp {
   margin-top: auto;
   padding-top: var(--vspace-1);
-  padding-bottom: calc(var(--vspace-3) - 5vh);
+  padding-bottom: calc(var(--vspace-3) - 2.5vh);
+}
+
+/* ------------------------------------------------------------------- 
+ * ## Custom Scrollbar
+ * ------------------------------------------------------------------- */
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #141516;
+  border-left: 1px solid #292620;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2c2c2d;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #515153;
 }
 
 /* --------------------------------------------------------------------
