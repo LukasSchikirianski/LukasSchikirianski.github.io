@@ -312,7 +312,6 @@
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
-  overflow: hidden;
 }
 
 body {
@@ -4277,9 +4276,8 @@ img.u-pull-left {
   text-align: center;
 }
 
-.title-pos {
-  padding: 0;
-  margin: 0;
+.nfp-title {
+  display: grid;
 }
 
 .giant-title {
@@ -4295,7 +4293,7 @@ img.u-pull-left {
 
 translucent {
   position: absolute;
-  top: 50%;
+  top: 42.5%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 50vw;
