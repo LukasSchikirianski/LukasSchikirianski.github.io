@@ -4297,7 +4297,7 @@ translucent {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 50vw;
-  opacity: 2.5%;
+  opacity: 1%;
   color: #ffffff;
 }
 
