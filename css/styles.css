@@ -4309,8 +4309,9 @@ translucent {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 35vw;
-  opacity: 0.005;
-  color: #ffffff;
+  color: #505050;
+  opacity: 0.05;
+  text-shadow: 10px 10px #000000;
 }
 
 /* ------------------------------------------------------------------- 
